@@ -2,6 +2,9 @@
 
 Este proyecto es una aplicación web interactiva de una bola mágica, que responde preguntas aleatoriamente. Los usuarios pueden hacer preguntas y la bola girará antes de mostrar una respuesta al azar.
 
+## Podes visitar el proyecto en:
+https://romherre.github.io/Bola-Magica/
+
 ## Características
 
 - ⚙️ **Animación de giro** de la bola antes de mostrar la respuesta.
