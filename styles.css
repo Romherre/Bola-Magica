@@ -1,0 +1,138 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffff00; 
+}
+
+.contenedor {
+    text-align: center;
+    background-color: rgb(221, 175, 248);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(138, 43, 226, 0.7);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: 0 20px;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #a132e0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a015c;
+}
+
+.bola {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 2s ease-in-out;
+}
+
+.circulo {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.numero {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+}
+
+.respuesta {
+    display: none;
+    margin-top: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ffffff; 
+    border-radius: 5px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    transition: opacity 0.3s ease;
+}
+
+.otra-pregunta {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.otra-pregunta button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #9828a7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.otra-pregunta button:hover {
+    background-color: #4a015c; 
+}
+
+#noBoton {
+    background-color: #dc3545; 
+}
+
+#noBoton:hover {
+    background-color: #c82333; 
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(1800deg); 
+    }
+    100% {
+        transform: rotate(3600deg); 
+    }
+}
